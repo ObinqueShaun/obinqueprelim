@@ -9,8 +9,18 @@ public class SetAobinque {
         
         Scanner input = new Scanner(System.in);
         
-        double hourly_wage;
-        int hours;
+        float price;
+        int quantity;
+        
+        System.out.println("Enter price of item: ");
+        price = input.nextFloat();
+        
+        System.out.println("Enter Quantity: ");
+        quantity = input.nextInt();
+        
+        float total_amount = price * quantity;
+        
+        System.out.printf("Total Amount: %.2f\n", total_amount);
         
     }
     
